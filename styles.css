@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 11px; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(30, 38%, 92%);
+}   
+
+.card-container {
+   display: flex;
+   align-items: center;
+   width: 100vh;
+   height: 100vh;
+   margin: 0 auto;;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    border-radius: 3%;
+    background-color: white;
+    gap: 20px;
+    padding-right: 20px;
+    
+}
+
+.column img {
+    width: 100%;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.column {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+}
+
+.column h3 {
+    font-size: 1.0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-weight: 500;
+    font-size: xx-small;
+  
+}
+.column h1 {
+    color: black;
+    font-family: Fraunces;
+    font-size: x-large;
+}
+
+.main-text {
+    font-family: Montserrat;
+    font-size: 11px;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.big-price {
+    font-family: Fraunces;
+    color: darkgreen;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.small-price {
+    color: black;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-left: 30px;
+    text-decoration: line-through;
+
+}
+
+button {
+    padding: 1rem 4rem;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    font-family: "Montserrat";
+    background: darkgreen;
+    cursor: pointer;
+    border-radius:5px;
+    margin-top: 10px;
+    font-weight: 500;
+    
+}
+
+
+@media (max-width: 375px) {
+    .cards {
+        flex-direction: column;
+        
+    }
+  
+}
